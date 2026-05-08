@@ -103,8 +103,15 @@ const logoutUser = async (req, res) => {
     }
 }
 
+// get route
+const hello = async (req, res) => {
+    res.status(200).json({
+        message: `You have entered a get request`
+    })
+}
 export {
     registerUser,
     loginUser,
-    logoutUser
+    logoutUser,
+    hello
 }
